@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jose Exotic</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    overflow:hidden;
+}
+
+.slider{
+    display:flex;
+    width:100%;
+    height:100vh;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+}
+
+.slide{
+    flex:0 0 100%;
+    width:100%;
+    height:100vh;
+    scroll-snap-align:start;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="slider">
+    <div class="slide">
+        <img src="1.jpeg" alt="Jose Exotic 1">
+    </div>
+
+    <div class="slide">
+        <img src="2.png" alt="Jose Exotic 2">
+    </div>
+</div>
+
+</body>
+</html>
